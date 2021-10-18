@@ -1,0 +1,12 @@
+<div class="center">
+
+    <input type="text" name="list" placeholder="New Component" name="post" [(ngModel)]="post">
+    <br>
+    <button type="submit" (click)="Addpost(post)">Submit</button>
+
+
+
+</div>
+
+<app-todo-list [list]="array"></app-todo-list>
+<app-todo-footer [number]="n"></app-todo-footer>
