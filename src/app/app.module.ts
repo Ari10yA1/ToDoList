@@ -12,6 +12,8 @@ import { TodoFooterComponent } from './todo-footer/todo-footer.component';
 import { TodoDetailsComponentComponent } from './todo-details-component/todo-details-component.component';
 import { TodoListComponentComponent } from './todo-list-component/todo-list-component.component';
 import { TodoServiceService } from './todo-service.service';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatListModule} from '@angular/material/list';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { TodoServiceService } from './todo-service.service';
     FormsModule,
     ReactiveFormsModule ,
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatListModule
   ],
   providers: [TodoServiceService],
   bootstrap: [AppComponent]
