@@ -1,0 +1,22 @@
+<h1>API Data</h1>
+<table class="center">
+
+<tr>
+  <th>Mission-Name</th>
+  <th>Mission-Id</th>
+  <th>Main_Manufacturer</th>
+  <th>Wikipedia</th>
+  <th>Website</th>
+  <th>Twitter</th>
+</tr>
+
+<tr *ngFor="let Data of data">
+  <td>{{Data.mission_name}}</td>
+  <td>{{Data.mission_id}}</td>
+  <td>{{Data.manufacturers[0]}}</td>
+  <td>{{Data.wikipedia}}</td>
+  <td>{{Data.website}}</td>
+  <td>{{Data.twitter}}</td>
+</tr>
+
+</table>
